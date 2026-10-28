@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { FormEvent, useState } from "react";
+import { AuthFrame } from "@/components/AuthFrame";
 import { ApiError, api } from "@/lib/api";
 
 export default function RegisterPage() {
@@ -34,7 +35,7 @@ export default function RegisterPage() {
   }
 
   return (
-    <main className="auth-wrap" id="main">
+    <AuthFrame>
       <form className="card auth-card" onSubmit={onSubmit}>
         <p className="kicker">ContextAI</p>
         <h1 style={{ fontSize: "2.4rem" }}>Create an account</h1>
@@ -47,6 +48,6 @@ export default function RegisterPage() {
         <button className="btn btn-primary" type="submit" disabled={pending}>{pending ? "Creating…" : "Create account"}</button>
         <p className="tiny"><Link href="/login">Already have an account?</Link></p>
       </form>
-    </main>
+    </AuthFrame>
   );
 }

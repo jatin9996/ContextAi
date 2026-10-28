@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { FormEvent, useState } from "react";
+import { AuthFrame } from "@/components/AuthFrame";
 import { ApiError, api } from "@/lib/api";
 
 export default function ForgotPasswordPage() {
@@ -26,7 +27,7 @@ export default function ForgotPasswordPage() {
   }
 
   return (
-    <main className="auth-wrap" id="main">
+    <AuthFrame>
       <form className="card auth-card" onSubmit={onSubmit}>
         <h1 style={{ fontSize: "2.2rem" }}>Reset password</h1>
         <p className="muted">If the email matches an account, a reset link is emailed. Until mail is configured, local development shows the link here.</p>
@@ -37,6 +38,6 @@ export default function ForgotPasswordPage() {
         <button className="btn btn-primary" type="submit">Request reset</button>
         <p className="tiny"><Link href="/login">Back to sign in</Link></p>
       </form>
-    </main>
+    </AuthFrame>
   );
 }

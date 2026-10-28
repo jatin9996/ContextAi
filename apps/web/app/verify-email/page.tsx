@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { FormEvent, Suspense, useState } from "react";
+import { AuthFrame } from "@/components/AuthFrame";
 import { ApiError, api } from "@/lib/api";
 
 function VerifyForm() {
@@ -42,10 +43,10 @@ function VerifyForm() {
 
 export default function VerifyEmailPage() {
   return (
-    <main className="auth-wrap" id="main">
+    <AuthFrame>
       <Suspense fallback={<p>Loading…</p>}>
         <VerifyForm />
       </Suspense>
-    </main>
+    </AuthFrame>
   );
 }

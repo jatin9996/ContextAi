@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { FormEvent, Suspense, useState } from "react";
+import { AuthFrame } from "@/components/AuthFrame";
 import { ApiError, api } from "@/lib/api";
 
 function ResetForm() {
@@ -42,10 +43,10 @@ function ResetForm() {
 
 export default function ResetPasswordPage() {
   return (
-    <main className="auth-wrap" id="main">
+    <AuthFrame>
       <Suspense fallback={<p>Loading reset form…</p>}>
         <ResetForm />
       </Suspense>
-    </main>
+    </AuthFrame>
   );
 }
