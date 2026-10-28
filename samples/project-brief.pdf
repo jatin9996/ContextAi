@@ -1,0 +1,45 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 390 >>
+stream
+BT
+/F1 12 Tf
+72 740 Td
+(ContextAI Project Brief) Tj
+0 -22 Td
+(Specification code: SPEC-CTX-1842) Tj
+0 -22 Td
+(The API is Python and FastAPI. PostgreSQL stores accounts and documents.) Tj
+0 -22 Td
+(Semantic search uses pgvector. Embeddings are 384-dimensional vectors.) Tj
+0 -22 Td
+(Complete API authentication before Friday.) Tj
+0 -22 Td
+(This brief does not define a project budget.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000682 00000 n 
+trailer << /Size 6 /Root 1 0 R >>
+startxref
+752
+%%EOF
